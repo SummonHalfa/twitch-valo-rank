@@ -13,7 +13,7 @@ export const nightbotLink = () => {
         console.log(nickname);
         console.log(tag);
 
-        nightbot.innerHTML = `Nightbot > !command add !rank $(urlfetch https://api.kyroskoh.xyz/valorant/v1/mmr/eu/${nickname}/${tag})`;
+        nightbot.innerHTML = `Nightbot > !commands add !rank $(urlfetch https://api.kyroskoh.xyz/valorant/v1/mmr/eu/${nickname}/${tag})`;
         streamelements.innerHTML = `StreamElements > !command add !rank $(urlfetch https://api.kyroskoh.xyz/valorant/v1/mmr/eu/${nickname}/${tag})`;
         streamlabs.innerHTML = `Streamlabs > !addcommand !rank {readapi.https://api.kyroskoh.xyz/valorant/v1/mmr/eu/${nickname}/${tag}}`;
         }
