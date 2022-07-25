@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module">
+        import * as test from "./js/index.js";
+        test.nightbotLink();
+    </script>
+</head>
+<body>
+    <div class="px-4 py-3 text-white bg-red-600">
+        <p class="text-sm font-medium text-center">
+          App ancora sottosviluppo da parte di SummonHalfa
+        </p>
+    </div>
+
+    <div class="max-w-sm mx-auto p-8">
+        <div class="relative"> 
+            <form method="POST" id="prova">
+                
+                <label class="block text-xs font-medium text-gray-500" for="email"> Nickname + Hashtag VALORANT </label>
+                <input class="m-auto w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded" name="nickname"/>
+
+                <input type="submit" id="test" class="mt-4 inline-block px-12 py-3 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring" value="Generate">   
+            </form>
+        </div>
+    </div>
+    
+    <div class="space-y-4">
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group" open>
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 id ="nightbot" class="text-lg font-medium text-gray-900">
+              
+            </h5>
+          </summary>
+        </details>
+    </div>
+    <div class="space-y-4">
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group" open>
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 id ="streamelements" class="text-lg font-medium text-gray-900">
+              
+            </h5>
+          </summary>
+        </details>
+    </div>
+    <div class="space-y-4">
+        <details class="p-6 border-l-4 border-green-500 bg-gray-50 group" open>
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h5 id ="streamlabs" class="text-lg font-medium text-gray-900">
+              
+            </h5>
+          </summary>
+        </details>
+    </div>
+</body>
+</html>
